@@ -1,113 +1,127 @@
+
 export default function DiscoverPage() {
-	return (
-		<div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
-			<div className="max-w-4xl mx-auto px-4 py-16">
-				{/* Title */}
-				<h1 className="text-5xl font-bold text-gray-900 mb-6 text-center">
-					Discover your app
-				</h1>
-				{/* Main Description Card */}
-				<div className="bg-white rounded-xl p-8 shadow-md text-center mb-16">
-					<p className="text-xl text-gray-600 max-w-2xl mx-auto mb-4">
-						This is your app's discover page—showcase what your app does
-						and how it helps creators.
-					</p>
-					<p className="text-base text-gray-500 max-w-2xl mx-auto mb-2">
-						Share real success stories, link to thriving Whop communities
-						using your app, and add referral links to earn affiliate fees
-						when people install your app.
-					</p>
-					<p className="text-sm text-gray-400 max-w-2xl mx-auto">
-						💡 <strong>Tip:</strong> Clearly explain your app's value
-						proposition and how it helps creators make money or grow their
-						communities.
-					</p>
-				</div>
+  const features = [
+    {
+      number: "01",
+      title: "Content Planning",
+      description:
+        "Turn scattered ideas into a structured content calendar built around your campaign goals.",
+      tag: "PLAN SMARTER",
+    },
+    {
+      number: "02",
+      title: "Campaign Operations",
+      description:
+        "Keep tasks, timelines, creative assets, and campaign workflows organized in one place.",
+      tag: "STAY IN CONTROL",
+    },
+    {
+      number: "03",
+      title: "Performance Intelligence",
+      description:
+        "Understand campaign results and identify actionable next steps for your marketing team.",
+      tag: "MAKE BETTER MOVES",
+    },
+  ];
 
-				{/* Pro Tips Section */}
-				<div className="grid md:grid-cols-2 gap-6 mb-10">
-					<div className="bg-white rounded-xl p-6 shadow-md flex flex-col gap-2">
-						<h3 className="font-semibold text-gray-900">
-							Showcase Real Success
-						</h3>
-						<p className="text-sm text-gray-600">
-							Link to real Whop communities using your app, with revenue
-							and member stats.
-						</p>
-					</div>
-					<div className="bg-white rounded-xl p-6 shadow-md flex flex-col gap-2">
-						<h3 className="font-semibold text-gray-900">
-							Include Referral Links
-						</h3>
-						<p className="text-sm text-gray-600">
-							Add <code>?a=your_app_id</code> to Whop links to earn
-							affiliate commissions.
-						</p>
-					</div>
-				</div>
+  return (
+    <main className="min-h-screen bg-[#09090b] text-white">
+      <div className="mx-auto max-w-7xl px-6 py-8 sm:px-10 lg:px-16">
+        <nav className="flex items-center justify-between border-b border-white/10 pb-7">
+          <a href="/" className="text-xl font-semibold tracking-tight">
+            Campaign<span className="text-violet-400">OS</span>
+          </a>
+          <span className="rounded-full border border-white/15 px-4 py-2 text-xs tracking-wide text-zinc-300">
+            AI CAMPAIGN INTELLIGENCE
+          </span>
+        </nav>
 
-				<h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
-					Examples of Success Stories
-				</h2>
+        <section className="relative overflow-hidden py-24 sm:py-32">
+          <div className="pointer-events-none absolute left-1/3 top-12 h-64 w-64 rounded-full bg-violet-600/15 blur-[110px]" />
 
-				{/* Main Content Cards */}
-				<div className="grid md:grid-cols-2 gap-6">
-					{/* Success Story Card 1 */}
-					<div className="bg-white rounded-xl p-6 shadow-md flex flex-col justify-between">
-						<div>
-							<h3 className="text-lg font-bold text-gray-900 mb-1">
-								CryptoKings
-							</h3>
-							<p className="text-xs text-gray-500 mb-2">
-								Trading Community
-							</p>
-							<p className="text-gray-700 mb-4 text-sm">
-								"Grew to{" "}
-								<span className="font-bold text-blue-600">
-									2,500+ members
-								</span>{" "}
-								and{" "}
-								<span className="font-bold text-blue-600">
-									$18,000+/mo
-								</span>{" "}
-								with automated signals. Members love the real-time
-								alerts!"
-							</p>
-						</div>
-						<a
-							href="https://whop.com/cryptokings/?a=your_app_id"
-							className="mt-auto block w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg transition-colors text-center text-sm"
-						>
-							Visit CryptoKings
-						</a>
-					</div>
+          <div className="relative max-w-4xl">
+            <p className="mb-7 text-xs font-medium uppercase tracking-[0.3em] text-violet-300">
+              Your marketing, in sync
+            </p>
 
-					{/* Success Story Card 2 */}
-					<div className="bg-white rounded-xl p-6 shadow-md flex flex-col justify-between">
-						<div>
-							<h3 className="text-lg font-bold text-gray-900 mb-1">
-								SignalPro
-							</h3>
-							<p className="text-xs text-gray-500 mb-2">
-								Premium Signals
-							</p>
-							<p className="text-gray-700 mb-4 text-sm">
-								"Retention jumped to{" "}
-								<span className="font-bold text-blue-600">92%</span>.
-								Affiliate program brought in{" "}
-								<span className="font-bold text-blue-600">$4,000+</span>{" "}
-								last quarter."
-							</p>
-						</div>
-						<a
-							href="https://whop.com/signalpro/?app=your_app_id"
-							className="mt-auto block w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg transition-colors text-center text-sm"
-						>
-							Visit SignalPro
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	);
+            <h1 className="max-w-4xl text-5xl font-semibold leading-[1.08] tracking-tight sm:text-7xl">
+              Great campaigns.
+              <br />
+              <span className="text-zinc-500">Clearer decisions.</span>
+            </h1>
+
+            <p className="mt-8 max-w-2xl text-base leading-8 text-zinc-400 sm:text-lg">
+              A smarter workspace for marketing teams to plan content,
+              coordinate campaigns, and turn performance insights into
+              meaningful action.
+            </p>
+
+            <a
+              href="/"
+              className="mt-10 inline-flex items-center gap-3 rounded-full bg-white px-6 py-3.5 text-sm font-semibold text-black transition hover:bg-violet-100"
+            >
+              Explore CampaignOS <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </section>
+
+        <section className="pb-20">
+          <div className="mb-8 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+            <div>
+              <p className="text-xs uppercase tracking-[0.25em] text-zinc-500">
+                Built for better execution
+              </p>
+              <h2 className="mt-3 text-2xl font-semibold tracking-tight sm:text-3xl">
+                One workspace. Three capabilities.
+              </h2>
+            </div>
+            <p className="max-w-sm text-sm leading-6 text-zinc-500">
+              From the first idea to the final insight, keep your team moving
+              in the same direction.
+            </p>
+          </div>
+
+          <div className="grid gap-4 md:grid-cols-3">
+            {features.map((feature) => (
+              <article
+                key={feature.number}
+                className="group rounded-2xl border border-white/10 bg-white/[0.03] p-7 transition duration-300 hover:-translate-y-1 hover:border-violet-400/40 hover:bg-white/[0.05]"
+              >
+                <div className="flex items-center justify-between">
+                  <span className="text-sm text-zinc-500">
+                    {feature.number}
+                  </span>
+                  <span className="text-lg text-violet-300 transition group-hover:translate-x-1">
+                    ↗
+                  </span>
+                </div>
+
+                <h3 className="mt-12 text-xl font-medium tracking-tight">
+                  {feature.title}
+                </h3>
+
+                <p className="mt-4 min-h-20 text-sm leading-7 text-zinc-400">
+                  {feature.description}
+                </p>
+
+                <div className="mt-8 border-t border-white/10 pt-5">
+                  <span className="text-[10px] font-medium tracking-[0.2em] text-violet-300">
+                    {feature.tag}
+                  </span>
+                </div>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <footer className="flex flex-col gap-3 border-t border-white/10 py-7 text-xs text-zinc-500 sm:flex-row sm:items-center sm:justify-between">
+          <p>
+            CampaignOS <span className="text-zinc-700">/</span> Campaign
+            intelligence for modern marketing teams
+          </p>
+          <p>Plan with purpose. Execute with clarity.</p>
+        </footer>
+      </div>
+    </main>
+  );
 }
