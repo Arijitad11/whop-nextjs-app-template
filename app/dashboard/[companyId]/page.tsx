@@ -58,7 +58,7 @@ export default async function DashboardPage({
               Discover
             </Link>
             <span className="hidden sm:inline">
-              {company.name || "Your workspace"}
+              {"Your workspace"}
             </span>
           </nav>
         </div>
