@@ -44,11 +44,13 @@ export default function DiscoverPage() {
               Your marketing, in sync
             </p>
 
-            <h1 className="max-w-5xl text-6xl font-semibold leading-[1.05] tracking-[-0.04em] sm:text-8xl">
-              Great campaigns.
-              <br />
-              <span className="text-zinc-500">Clearer decisions.</span>
-            </h1>
+            
+           <h1 className="max-w-5xl text-6xl font-semibold leading-[1.05] tracking-[-0.04em] sm:text-8xl">
+             Great campaigns.
+             <br />
+             <span className="text-zinc-500">Clearer decisions.</span>
+          </h1>
+
 
             <p className="mt-8 max-w-2xl text-base leading-8 text-zinc-400 sm:text-lg">
               A smarter workspace for marketing teams to plan content,
