@@ -44,7 +44,7 @@ export default function DiscoverPage() {
               Your marketing, in sync
             </p>
 
-            <h1 className="max-w-4xl text-5xl font-semibold leading-[1.08] tracking-tight sm:text-7xl">
+            <h1 className="max-w-5xl text-6xl font-semibold leading-[1.05] tracking-[-0.04em] sm:text-8xl">
               Great campaigns.
               <br />
               <span className="text-zinc-500">Clearer decisions.</span>
