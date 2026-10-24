@@ -152,7 +152,7 @@ export default async function DashboardPage({
         </section>
 
         <footer className="mt-12 border-t border-[#E4DED4] pt-6 text-xs leading-5 text-[#8A8176]">
-          CampaignOS workspace · Company: {company.name || companyId}
+          CampaignOS workspace · Company ID: {companyId}
           <p className="mt-1">
             This is the initial workspace layout. Campaign creation, saved
             projects, and live analytics will be added in the next steps.
