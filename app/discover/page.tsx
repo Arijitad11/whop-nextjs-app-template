@@ -49,7 +49,7 @@ export default function DiscoverPage() {
              Great campaigns.
              <br />
              <span className="text-zinc-500">Clearer decisions.</span>
-          </h1>
+           </h1>
 
 
             <p className="mt-8 max-w-2xl text-base leading-8 text-zinc-400 sm:text-lg">
